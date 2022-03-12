@@ -1,0 +1,7 @@
+Psuedocode for creating mario pyramid by taking dimension from user
+
+1. Get A Positive Number From user between 1 and 8 including . this will be height of our pyramid.
+2. First we will print hashes by making a for loop and print them in ascending order top to bottom  from left to right.
+3  make a formula that will determine number of hashes & dots in a paricular line just from height number.
+4. Then we will add dots from left to right on blank spaces to indent hashes in desired way.
+5. now we will remove the dots to blank spaces to get desired result.
