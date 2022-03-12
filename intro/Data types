@@ -1,0 +1,12 @@
+types      call function   placeholders    their properties
+
+bool       get_bool       
+char       get_char        %c
+double     get_double                      can store more decimal values than float
+float      get_float       %f
+int        get_int         %i              uses 32 bits 
+long       get_long        %li             uses 64 bits to store data
+string     get_string      %s
+
+operators
++ - * / 

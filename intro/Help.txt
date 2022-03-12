@@ -1,0 +1,65 @@
+commands for command line interface for browsing
+ls       -------------lists all the files in current directory you are in
+rm hello -------------removes the executable hello file
+mv Hello.c hello.c ---renames and moves the Hello.c to hello.c
+mkdir lecture --------makes a directory named lecture
+cd intro -------------i will get access to intro folder in the terminal
+mv hello.c .. --------moves the file one folder up 
+rmdir ----------------removes directory
+cp -------------------to copy files
+
+.  means current directory in command line 
+.. means directory one above the current folder
+
+
+Tools for help ------- 
+
+1. help50
+troubleshoot problems in code
+
+example code
+
+int main(void)
+{
+   printf("hello, world!")
+}
+
+while compiling you will get error message like:-
+
+
+Hello.c:5:5: error: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+    printf("Hello, world!\n");
+    ^
+Hello.c:5:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.
+make: *** [<builtin>: Hello] Error 1
+
+
+Hello.c:5:5: means in the file hello.c there is an error found while compiling 5th line of code and the error was in 5th character of the line
+
+these error codes might not always be handy to understand and can be quite frustating for  beginner so  to prevent that we will use a tool devoloped by cs50 staff called help50
+
+help50 make Hello ---------write this while compiling to use the tool
+
+
+and you will see results like :-
+
+Asking for help...
+
+Hello.c:5:5: error: implicitly declaring library function 'printf' with
+type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+    printf("Hello, world!\n");
+
+Did you forget to #include <stdio.h> (in which printf
+is declared) atop your file?
+
+This is more User friendly and can help you at your initial stage of coding journey
+
+2.style50
+
+can give feedback on style of your code like adding comments , nice indentations
+
+3.check50
+
+check correctness of code rather than making it compilable in help50
+helpfull during coding in your problem sets , lab
